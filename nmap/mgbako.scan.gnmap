@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sun Aug  3 18:48:45 2025 as: nmap -sCV -p22,80 -oA nmap/mgbako.scan -Pn mgbako.afrihackbox.ctf
+Host: 10.0.1.14 (mgbako.afrihackbox.ctf)	Status: Up
+Host: 10.0.1.14 (mgbako.afrihackbox.ctf)	Ports: 22/open/tcp//ssh//OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)/, 80/open/tcp//http//nginx 1.22.1/
+# Nmap done at Sun Aug  3 18:48:58 2025 -- 1 IP address (1 host up) scanned in 12.78 seconds

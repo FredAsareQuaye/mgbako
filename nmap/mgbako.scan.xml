@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Aug  3 18:48:45 2025 as: nmap -sCV -p22,80 -oA nmap/mgbako.scan -Pn mgbako.afrihackbox.ctf -->
+<nmaprun scanner="nmap" args="nmap -sCV -p22,80 -oA nmap/mgbako.scan -Pn mgbako.afrihackbox.ctf" start="1754246925" startstr="Sun Aug  3 18:48:45 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1754246925" endtime="1754246938"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.0.1.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mgbako.afrihackbox.ctf" type="user"/>
+<hostname name="mgbako.afrihackbox.ctf" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="9.2p1 Debian 2+deb12u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 fa:2d:b3:36:01:18:50:95:c1:fa:86:09:d9:0a:e8:71 (ECDSA)&#xa;  256 9f:c8:da:25:a3:ed:c1:d4:96:7c:8f:1a:77:d4:93:b1 (ED25519)"><table>
+<elem key="fingerprint">fa2db33601185095c1fa8609d90ae871</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOoHH4oIFYaJmYNwznuamzti6pyMnIVdSEXIl1Tsjy37vay7gTTxy715387eYH0I6JWd5zQVqjQ96ArLt6TwKgM=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">9fc8da25a3edc1d4967c8f1a77d493b1</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFwTdrbta7NZSXznFFegCL1tBdj3FzAE+BqldpzmBYFy</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.22.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.22.1</cpe></service><script id="http-server-header" output="nginx/1.22.1"><elem>nginx/1.22.1</elem>
+</script><script id="http-robots.txt" output="62 disallowed entries (15 shown)&#xa;/*?order= /*?tag= /*?id_currency= /*?search_query= &#xa;/*?back= /*?n= /*&amp;order= /*&amp;tag= /*&amp;id_currency= &#xa;/*&amp;search_query= /*&amp;back= /*&amp;n= /*controller=addresses &#xa;/*controller=address /*controller=authentication"/><script id="http-title" output="mgbako&#xa;Requested resource was http://mgbako.afrihackbox.ctf/index.php"><elem key="title">mgbako</elem>
+<elem key="redirect_url">http://mgbako.afrihackbox.ctf/index.php</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/></port>
+</ports>
+<times srtt="212057" rttvar="159071" to="848341"/>
+</host>
+<runstats><finished time="1754246938" timestr="Sun Aug  3 18:48:58 2025" summary="Nmap done at Sun Aug  3 18:48:58 2025; 1 IP address (1 host up) scanned in 12.78 seconds" elapsed="12.78" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

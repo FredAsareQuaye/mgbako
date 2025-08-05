@@ -1,0 +1,23 @@
+# Nmap 7.94SVN scan initiated Sun Aug  3 18:48:45 2025 as: nmap -sCV -p22,80 -oA nmap/mgbako.scan -Pn mgbako.afrihackbox.ctf
+Nmap scan report for mgbako.afrihackbox.ctf (10.0.1.14)
+Host is up (0.21s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+| ssh-hostkey: 
+|   256 fa:2d:b3:36:01:18:50:95:c1:fa:86:09:d9:0a:e8:71 (ECDSA)
+|_  256 9f:c8:da:25:a3:ed:c1:d4:96:7c:8f:1a:77:d4:93:b1 (ED25519)
+80/tcp open  http    nginx 1.22.1
+|_http-server-header: nginx/1.22.1
+| http-robots.txt: 62 disallowed entries (15 shown)
+| /*?order= /*?tag= /*?id_currency= /*?search_query= 
+| /*?back= /*?n= /*&order= /*&tag= /*&id_currency= 
+| /*&search_query= /*&back= /*&n= /*controller=addresses 
+|_/*controller=address /*controller=authentication
+| http-title: mgbako
+|_Requested resource was http://mgbako.afrihackbox.ctf/index.php
+|_http-trane-info: Problem with XML parsing of /evox/about
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug  3 18:48:58 2025 -- 1 IP address (1 host up) scanned in 12.78 seconds
